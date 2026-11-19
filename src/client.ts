@@ -5,7 +5,7 @@ import type {
 } from "./types.js";
 
 export const DEFAULT_BASE_URL = "https://mcp.dropenginehq.com";
-export const SDK_VERSION = "0.1.0";
+export const SDK_VERSION = "0.1.1";
 
 export interface AgentSafetyOptions {
   /**
