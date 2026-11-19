@@ -1,0 +1,54 @@
+{
+  "name": "dropengine-agent-safety",
+  "version": "0.1.0",
+  "description": "Safety checks for AI agents before they open a URL, install an npm package, trust external content or take a risky action. Pay per call with x402 (USDC on Base); no account or API key.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "ai-agent",
+    "agent-safety",
+    "prompt-injection",
+    "url-safety",
+    "npm-security",
+    "supply-chain",
+    "x402",
+    "mcp",
+    "llm-tools",
+    "openai",
+    "vercel-ai-sdk"
+  ],
+  "homepage": "https://github.com/Ahmet11159/dropengine-agent-safety#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahmet11159/dropengine-agent-safety.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ahmet11159/dropengine-agent-safety/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.18.6",
+    "typescript": "^5.9.2",
+    "vitest": "^4.1.11"
+  }
+}
